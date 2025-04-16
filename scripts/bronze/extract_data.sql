@@ -13,7 +13,7 @@ SELECT "loading bronze layer" AS message;
 
 SELECT "Loading CRM Tables" AS message;
 TRUNCATE TABLE crm_customer_info;
-LOAD DATA LOCAL INFILE 'datasets/cust_info.csv'
+LOAD DATA LOCAL INFILE 'datasets/course_crm/cust_info.csv'
 INTO TABLE crm_customer_info
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -31,7 +31,7 @@ SET
 
 -- Load crm_prd_info
 TRUNCATE TABLE crm_prd_info;
-LOAD DATA LOCAL INFILE 'datasets/prd_info.csv'
+LOAD DATA LOCAL INFILE 'datasets/source_crm/prd_info.csv'
 INTO TABLE crm_prd_info
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -49,7 +49,7 @@ SET
 
 -- Load crm_sales_details
 TRUNCATE TABLE crm_sales_details;    
-LOAD DATA LOCAL INFILE 'datasets/sales_details.csv'
+LOAD DATA LOCAL INFILE 'datasets/source_crm/sales_details.csv'
 INTO TABLE crm_sales_details
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -70,7 +70,7 @@ SET
 SELECT "Loading ERP Tables" AS message;
 -- Load erp_loc_a101
 TRUNCATE TABLE erp_loc_a101;
-LOAD DATA LOCAL INFILE 'datasets/LOC_A101.csv'
+LOAD DATA LOCAL INFILE 'datasets/source_erp/LOC_A101.csv'
 INTO TABLE erp_loc_a101
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -83,7 +83,7 @@ SET
 
 -- Load erp_cust_a212
 TRUNCATE TABLE erp_cust_a212;
-LOAD DATA LOCAL INFILE 'datasets/CUST_AZ12.csv'
+LOAD DATA LOCAL INFILE 'datasets/source_erp/CUST_AZ12.csv'
 INTO TABLE erp_cust_a212
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -97,7 +97,7 @@ SET
 
 -- Load erp_px_cat_g1v2
 TRUNCATE TABLE erp_px_cat_g1v2;
-LOAD DATA LOCAL INFILE 'datasets/PX_CAT_G1V2.csv'
+LOAD DATA LOCAL INFILE 'datasets/source_erp/PX_CAT_G1V2.csv'
 INTO TABLE erp_px_cat_g1v2
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
