@@ -2,9 +2,10 @@
 This project implements an SQL-based Data Warehouse ETL system to transform raw operational data into cleansed, enriched, and structured data using MySQL. The system prepares data from multiple domains such as customer info, product data, sales transactions, and ERP records for downstream analytics, dashboards, and data science workflows.
 
 Project Architecture:
+
 ![image](https://github.com/user-attachments/assets/a49b6880-0c9b-4653-9a79-40771e48b622)
 
-ETL Type
+*** ETL Type ***
 Extract: Data sourced from bronze schema (raw ingestion layer)
 
 Transform: Cleanup, deduplication, standardization, and enrichment in bronze layer
@@ -19,7 +20,7 @@ ERP Customer	erp_cust_a212	silver.erp_cust_a212	Cleansed demographic info
 ERP Location	erp_loc_a101	silver.erp_loc_a101	Standardized country codes
 Product Categories	erp_px_cat_g1v2	silver.erp_px_cat_g1v2	Clean hierarchical product category
 
-Skills Demonstrated
+*** Skills Demonstrated ***
 SQL Window Functions (ROW_NUMBER(), LEAD())
 
 ETL Pipeline Design
