@@ -1,5 +1,5 @@
 # sql_data_warehouse_project
-This project implements an SQL-based Data Warehouse ETL system to transform raw operational data into cleansed, enriched, and structured data using MySQL. The system prepares data from multiple domains such as customer info, product data, sales transactions, and ERP records for downstream analytics, dashboards, and data science workflows.
+This project implements an SQL-based Data Warehouse ETL system on the sales, customers and products data of a hypothetical "Wale Mart" company to transform raw operational data into cleansed, enriched, and structured data using MySQL. The system prepares data from multiple domains such as customer info, product data, sales transactions, and ERP records for downstream analytics, dashboards, and data science workflows.
 
 Project Architecture:
 
